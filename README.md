@@ -1,5 +1,4 @@
 # PluggableJs
-============
 
 Convention of how to load javascript only in certain pages based on controller and action parameters.
 
