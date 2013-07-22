@@ -1,7 +1,7 @@
 module PluggableJs
   class Railtie < Rails::Railtie
-    initializer "pluggable_js" do
-      ActionView::Base.send :include, PluggableJs
+    initializer "pluggable_js.helpers" do
+      ActionView::Base.send :include, Helpers
     end
   end
 end
