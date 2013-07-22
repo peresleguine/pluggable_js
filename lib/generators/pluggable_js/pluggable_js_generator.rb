@@ -10,13 +10,14 @@ class PluggableJsGenerator < Rails::Generators::Base
     end
   end
 
-  protected
+  private
 
-    def model_name
-      controller.classify
-    end
+  def model_name
+    controller.classify
+  end
 
-    def controller_name
-      controller.tableize
-    end
+  def controller_name
+    controller.tableize
+  end
+  
 end
