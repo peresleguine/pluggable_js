@@ -27,9 +27,9 @@ Now you simply have to define `Post.index` and `Post.show` functions in controll
 Lets say you've created action `search` that renders `index` template. Most likely we still need to trigger `Post.index()` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
 
 ``` ruby
-    PluggableJs.config do |config|
-      config.pair_actions = { 'search' => 'index' }
-    end
+PluggableJs.config do |config|
+  config.pair_actions = { 'search' => 'index' }
+end
 ```
 
 `{ 'create' => 'new', 'update' => 'edit' }` is a default REST configuration.
