@@ -1,5 +1,8 @@
 Description:
-    TODO: write a description
+    Creates js files containing function callers based on controller and action parameters.
 
 Example:
-    TODO: write an example
+    $ rails generate pluggable_js Post index new
+
+        create  app/assets/javascripts/pluggable/posts/index.js.coffee
+        create  app/assets/javascripts/pluggable/posts/show.js.coffee
