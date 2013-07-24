@@ -22,13 +22,23 @@ It will create two files (just function callers):
     app/assets/javascripts/pluggable/posts/index.js.coffee
     app/assets/javascripts/pluggable/posts/show.js.coffee
 
-Now you simply have to define `Post.index` and `Post.show` functions in controller related js file (e.g. posts.js.coffee). They will be triggered only when matching controller and action parameters. Take a look at generated files for additional info.
+Now you simply have to define `Post.index` and `Post.show` functions in posts.js.coffee:
+
+```coffeescript
+window.Post ||= {}
+Post.index = () ->
+  # your code goes here
+Post.show = () ->
+  # and here
+```
+
+They will be triggered only when matching controller and action parameters.
 
 ## Config
 
 Lets say you've created action `search` that renders `index` template. Most likely we still need to trigger `Post.index()` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
 
-``` ruby
+```ruby
 PluggableJs.config do |config|
   config.pair_actions = { 'search' => 'index' }
 end
