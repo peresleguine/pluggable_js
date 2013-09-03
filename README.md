@@ -1,6 +1,6 @@
 # PluggableJs
 
-Sometimes you need to use javascript only in specific view files, but you don't want to change DOM or write code in a view. Maybe you have one container with the same class in different templates, but part of bound logic is needed only in one. Or maybe some javascript causes exceptions in other views.
+Sometimes you need to use javascript only in specific pages, but you don't want to change DOM or write code in a view. Maybe you have one container with the same class in different templates, but part of bound logic is needed only in one. Or maybe some javascript causes exceptions in other views.
 
 This gem provides simple functionality of loading javascript only in certain pages based on controller and action parameters. Keep your js code in controller related files as action based functions (still in asset pipeline). It will be triggered only if needed.
 
