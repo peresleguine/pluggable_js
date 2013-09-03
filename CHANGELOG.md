@@ -9,7 +9,3 @@
 ## v0.0.1
 
 * added tests
-
-## v0.0.2
-
-* edited dependencies
