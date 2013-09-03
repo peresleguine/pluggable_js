@@ -18,6 +18,14 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'coffee-rails', '~> 4.0'
+  spec.add_dependency 'jquery-rails', '~> 3.0'
+  spec.add_dependency 'rails', '~> 4.0.0'
+
   spec.add_development_dependency 'bundler', '~> 1.3'
-  spec.add_runtime_dependency 'coffee-rails', '~> 3.2.1'
+  spec.add_development_dependency 'cucumber-rails'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'sqlite3'
+  spec.add_development_dependency 'database_cleaner'
+  spec.add_development_dependency 'selenium-webdriver'
 end

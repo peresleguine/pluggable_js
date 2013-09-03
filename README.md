@@ -7,7 +7,7 @@ This gem provides simple functionality of loading javascript only in certain pag
 ## Installation
 
 1. Add `gem 'pluggable_js'` to Gemfile and run `bundle` command to install it
-2. Add `<%= javascript_pluggable_tag %>` to layout
+2. Add `<%= javascript_pluggable_tag %>` to application layout file after `<%= javascript_include_tag 'application' %>` line
 3. Add `pluggable/*` to to assets precompile configuration in production.rb (and staging.rb if you have one), e.g.: `config.assets.precompile += %w(pluggable/*)`
 4. Be sure that `pluggable` folder is out of `require_tree` statement in application.js
 
@@ -20,15 +20,15 @@ Choose controller and actions you want to use for pluggable js and run generator
 It will create two files (just function callers):
     
     app/assets/javascripts/pluggable/posts/index.js.coffee
-    app/assets/javascripts/pluggable/posts/show.js.coffee
+    app/assets/javascripts/pluggable/posts/new.js.coffee
 
-Now you simply have to define `Post.index` and `Post.show` functions in posts.js.coffee:
+Now you simply have to define `Post.index` and `Post.new` functions in posts.js.coffee:
 
 ```coffeescript
 window.Post ||= {}
 Post.index = () ->
   # your code goes here
-Post.show = () ->
+Post.new = () ->
   # and here
 ```
 
@@ -45,11 +45,3 @@ end
 ```
 
 `{ 'create' => 'new', 'update' => 'edit' }` is a default REST configuration.
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
