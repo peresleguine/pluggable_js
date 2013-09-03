@@ -9,3 +9,11 @@
 ## v0.0.1
 
 * added tests
+
+## v0.0.2
+
+* edited dependencies
+
+## v0.0.3
+
+* edited rails as >= 3.1 dependency
