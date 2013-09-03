@@ -5,7 +5,7 @@ module PluggableJs
       controller = params[:controller]
       action = define_pair_action
 
-      if File.exist?("app/assets/javascripts/pluggable/#{controller}/#{action}.js.coffee")
+      if File.exist?(Rails.root + "app/assets/javascripts/pluggable/#{controller}/#{action}.js.coffee")
         javascript_include_tag "pluggable/#{controller}/#{action}"
       end
     end

@@ -2614,3 +2614,66 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-03 22:51:47
 
 
 Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-09-03 22:51:47 +0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:22:40 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-03 23:22:40 +0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:40 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:40 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:40 +0400
+
+
+Started GET "/assets/pluggable/posts/index.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:40 +0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-09-03 23:22:42 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-03 23:22:43 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:43 +0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:43 +0400
+
+
+Started GET "/assets/pluggable/posts/new.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:43 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:43 +0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:22:46 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-03 23:22:46 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:46 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:46 +0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:46 +0400
+
+
+Started GET "/assets/pluggable/posts/index.js?body=1" for 127.0.0.1 at 2013-09-03 23:22:46 +0400

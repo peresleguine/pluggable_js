@@ -467,3 +467,185 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
 Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:03:03 +0400
 Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:03:03 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:14:54 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:14:54 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:14:54 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:15:36 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:15:36 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:15:36 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:16:25 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:16:25 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:16:25 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:17:20 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:17:20 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:17:20 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:18:19 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:18:20 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:18:20 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:57:46 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 68ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:57:46 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:57:46 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-03 23:57:46 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-03 23:58:50 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-03 23:58:50 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-03 23:58:50 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-03 23:58:50 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:00:51 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:00:51 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:00:51 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:00:51 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:01:02 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:01:02 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:01:02 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:01:02 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:02:16 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:02:16 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:02:16 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:02:16 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:03:25 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:03:25 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:03:25 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:03:25 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:04:33 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:04:33 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:04:33 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:04:33 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:05:02 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:05:02 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:05:02 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:05:02 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:05:27 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:05:27 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:05:27 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:05:27 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:05:38 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:05:38 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:05:38 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:05:38 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:06:49 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:06:49 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:06:49 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:06:49 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:07:41 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:07:41 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:07:41 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:07:41 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:09:05 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:09:05 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:09:05 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:09:05 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:09:35 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:09:35 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:09:35 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:09:35 +0400
+Started GET "/posts/new" for 127.0.0.1 at 2013-09-04 00:09:35 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/pluggable/posts/new.js" for 127.0.0.1 at 2013-09-04 00:09:35 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:09:53 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:09:53 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:09:53 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:09:53 +0400
+Started GET "/posts/new" for 127.0.0.1 at 2013-09-04 00:09:55 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:09:55 +0400
+Started GET "/assets/pluggable/posts/new.js" for 127.0.0.1 at 2013-09-04 00:09:55 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:10:07 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:10:07 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:10:07 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:10:07 +0400
+Started GET "/posts/new" for 127.0.0.1 at 2013-09-04 00:10:07 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/pluggable/posts/new.js" for 127.0.0.1 at 2013-09-04 00:10:07 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:11:22 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:11:22 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:11:22 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:11:22 +0400
+Started GET "/posts/new" for 127.0.0.1 at 2013-09-04 00:11:22 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/pluggable/posts/new.js" for 127.0.0.1 at 2013-09-04 00:11:22 +0400
+Started GET "/posts" for 127.0.0.1 at 2013-09-04 00:16:42 +0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-09-04 00:16:42 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-04 00:16:42 +0400
+Started GET "/assets/pluggable/posts/index.js" for 127.0.0.1 at 2013-09-04 00:16:42 +0400
+Started GET "/posts/new" for 127.0.0.1 at 2013-09-04 00:16:42 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/pluggable/posts/new.js" for 127.0.0.1 at 2013-09-04 00:16:42 +0400

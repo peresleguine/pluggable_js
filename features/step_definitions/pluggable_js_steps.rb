@@ -2,7 +2,14 @@ When(/^I go to list of posts$/) do
   visit posts_path
 end
 
-Then(/^I should see "(.*?)"$/) do |text|
-  print page.html
-  expect(page).to have_content 'My life for aiur!'
+When(/^I go to new post$/) do
+  visit new_post_path
+end
+
+Then(/^I should see '(.*?)'$/) do |text|
+  page.should have_content text
+end
+
+And(/^I should not see '(.*?)'$/) do |text|
+  page.should_not have_content text
 end
