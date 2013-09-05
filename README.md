@@ -8,7 +8,7 @@ This gem provides simple functionality of loading javascript only in certain pag
 
 1. Add `gem 'pluggable_js'` to Gemfile and run `bundle` command to install it
 2. Add `<%= javascript_pluggable_tag %>` to application layout file after `<%= javascript_include_tag 'application' %>` line
-3. Add `pluggable/*` to to assets precompile configuration in production.rb (and staging.rb if you have one), e.g.: `config.assets.precompile += %w(pluggable/*)`
+3. Add `pluggable/*` to assets precompile configuration in production.rb (and staging.rb if you have one), e.g.: `config.assets.precompile += %w(pluggable/*)`
 4. Be sure that `pluggable` folder is out of `require_tree` statement in application.js
 
 ## Usage
@@ -36,7 +36,7 @@ They will be triggered only when matching controller and action parameters.
 
 ## Config
 
-Lets say you've created action `search` that renders `index` template. Most likely we still need to trigger `Post.index()` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
+Let's say you've created action `search` that renders `index` template. Most likely we still need to trigger `Post.index()` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
 
 ```ruby
 PluggableJs.config do |config|
