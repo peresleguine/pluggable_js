@@ -17,3 +17,7 @@
 ## v0.0.3
 
 * edited rails as >= 3.1 dependency
+
+## v0.0.4
+
+* added necessary folders to gitignore for dummy app
