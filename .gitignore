@@ -16,5 +16,7 @@ pkg
 rdoc
 spec/reports
 test/tmp
+test/dummy/tmp
+test/dummy/log
 test/version_tmp
 tmp
