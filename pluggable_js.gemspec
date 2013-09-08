@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = PluggableJs::VERSION
   spec.authors       = ['Andrey Peresleguine']
   spec.email         = ['peresleguine@gmail.com']
-  spec.description   = %q{Convention of how to load javascript only in certain pages based on controller and action parameters.}
+  spec.description   = %q{Convention of how to load page specific javascript based on controller and action parameters.}
   spec.summary       = %q{Pluggable javascript.}
   spec.homepage      = 'https://github.com/peresleguine/pluggable_js'
   spec.license       = 'MIT'
