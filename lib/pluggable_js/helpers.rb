@@ -1,12 +1,21 @@
 module PluggableJs
   module Helpers
 
+    # if file exists – include it, else – call function
     def javascript_pluggable_tag
       controller = params[:controller]
       action = define_pair_action
 
       if File.exist?(Rails.root + "app/assets/javascripts/pluggable/#{controller}/#{action}.js.coffee")
         javascript_include_tag "pluggable/#{controller}/#{action}"
+      else
+        object = controller.classify
+
+        javascript_tag "jQuery(function() { 
+          if (typeof(#{object}) == 'object' && typeof(#{object}.#{action}) == 'function') { 
+            return #{object}.#{action}();
+          }
+        });"
       end
     end
 

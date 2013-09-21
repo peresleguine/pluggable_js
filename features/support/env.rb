@@ -1,4 +1,6 @@
 require 'bundler'
+require 'coffee_script'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e

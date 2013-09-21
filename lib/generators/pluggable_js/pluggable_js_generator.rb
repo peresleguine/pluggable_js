@@ -6,7 +6,7 @@ class PluggableJsGenerator < Rails::Generators::Base
   def create_pluggable_js_files
     actions.each do |action|
       @action = action
-      template 'function_caller.js.coffee', File.join('app/assets/javascripts/pluggable', controller_name, "#{action}.js.coffee")
+      template 'large_piece_of_code.js.coffee', File.join('app/assets/javascripts/pluggable', controller_name, "#{action}.js.coffee")
     end
   end
 

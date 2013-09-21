@@ -21,3 +21,7 @@
 ## v0.0.4
 
 * added necessary folders to gitignore for dummy app
+
+## v0.0.5
+
+* improved function call, left generator only for large js files
