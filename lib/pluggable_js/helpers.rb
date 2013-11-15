@@ -12,8 +12,8 @@ module PluggableJs
         object = controller.classify
 
         javascript_tag "jQuery(function() { 
-          if (typeof(#{object}) == 'object' && typeof(#{object}.#{action}) == 'function') { 
-            return #{object}.#{action}();
+          if (typeof(#{object}) == 'object' && typeof(#{object}['#{action}']) == 'function') { 
+            return #{object}['#{action}']();
           }
         });"
       end
