@@ -13,7 +13,7 @@ module PluggableJs
 
         javascript_tag "jQuery(function() { 
           if (typeof(#{object}) == 'object' && typeof(#{object}['#{action}']) == 'function') { 
-            return #{object}['#{action}'];
+            return #{object}['#{action}']();
           }
         });"
       end
