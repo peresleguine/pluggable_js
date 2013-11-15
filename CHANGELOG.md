@@ -25,3 +25,7 @@
 ## v0.0.5
 
 * improved function call, left generator only for large js files
+
+## v0.0.6
+
+* fixed function call for IE
