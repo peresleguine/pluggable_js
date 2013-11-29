@@ -12,10 +12,6 @@ class PluggableJsGenerator < Rails::Generators::Base
 
   private
 
-  def model_name
-    controller.classify
-  end
-
   def controller_name
     controller.tableize
   end

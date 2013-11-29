@@ -18,15 +18,15 @@ Next steps are necessary only if you want to use generator for large pieces of j
 Simply define functions in your controller related file (e.g. posts.js.coffee) like so:
 
 ```coffeescript
-window.Post ||= {}
-Post.index = () ->
+window.Posts ||= {}
+Posts.index = () ->
   # your code goes here
-Post.new = () ->
+Posts.new = () ->
   # and here
 ```
 Or, in rare cases, if you have large piece of code (maybe external lib) that you don't want to define as a function, choose controller and actions you want to use and run generator, e.g.:
     
-    rails generate pluggable_js Post index new
+    rails generate pluggable_js Posts index new
 
 It will create two files where you may add your code (don't forget to follow necessary installation steps):
     
@@ -35,7 +35,7 @@ It will create two files where you may add your code (don't forget to follow nec
 
 ## Config
 
-Let's say you've created action `search` that renders `index` template. Most likely we still need to trigger `Post.index()` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
+Let's say you've created action `search` that renders `index` template. Most likely we still need to trigger `Posts.index()` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
 
 ```ruby
 PluggableJs.config do |config|

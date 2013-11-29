@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  def index 
+  def index
+    pluggable_js({ a:1, b:2 })
   end
 
   def new
