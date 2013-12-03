@@ -29,3 +29,7 @@
 ## v0.0.6
 
 * fixed function call for IE
+
+## v0.0.7
+
+* passing data to javascript functionality
