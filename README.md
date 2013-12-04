@@ -35,7 +35,7 @@ It will create two files where you may add your code (don't forget to follow nec
 
 ## Passing data
 
-Starting with version 0.0.7 you may pass data to javascript using `pluggable_js` helper in a controller. See example below:
+Starting with version 1.0.0 you may pass data to javascript using `pluggable_js` helper in a controller. See example below:
 
 ```ruby
 class PostsController < ApplicationController
@@ -79,4 +79,4 @@ If you passing data, move `pluggable_js` helper into a separate private method a
 
 ## Upgrade
 
-If you are upgrading from version `<= 0.0.6` to `0.0.7`, all you have to do is rename old construction `window.Post` to new `window.posts` (see usage).
+If you are upgrading from version `<= 0.0.6` to `1.0.0`, all you have to do is rename old construction `window.Post` to new `window.posts` (see usage).

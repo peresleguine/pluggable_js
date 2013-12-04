@@ -48,6 +48,7 @@ module PluggableJs
         end.join(' ')
         @js_data_string = 'window.pluggable_js = {}; ' + data_string
       end
+      
     end
 
   end
