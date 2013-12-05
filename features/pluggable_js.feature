@@ -9,12 +9,13 @@ Feature: PluggableJs
     And I should not see 'You wanna piece of me, boy?'
 
   Examples:
-    | action | data_type |
-    | index  | string    |
-    | search | integer   |
-    | index  | boolean   |
-    | search | array     |
-    | index  | hash      |
+    | action | data_type       |
+    | index  | string          |
+    | search | integer         |
+    | index  | boolean         |
+    | search | array           |
+    | index  | hash            |
+    | search | array_of_hashes |
 
   @javascript
   Scenario: New Post

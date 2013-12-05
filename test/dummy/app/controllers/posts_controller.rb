@@ -19,7 +19,8 @@ class PostsController < ApplicationController
       minerals_size: 999,
       base_is_under_attack: true,
       alert: ['Nuclear', 'launch', 'detected.'],
-      units: { 'Zealots' => 12, 'Dragoons' => 6, 'Archons' => 1 }
+      ground_units_quotes: { 'Dragoon' => 'Make use of me.', 'High Templar' => 'It shall be done.', 'Archon' => 'We burn...' },
+      air_units_quotes: [{'Scout' => 'Awaiting command.'}, {'Arbiter' => 'We feel your presence.'}, {'Carrier' => 'Affirmative.'}]
     })
   end
 

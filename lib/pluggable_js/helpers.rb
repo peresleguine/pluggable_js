@@ -39,7 +39,7 @@ module PluggableJs
         data_string = hash.map do |key, value|
           value = if value.is_a?(String)
             "'#{value}'"
-          elsif value.is_a?(Hash)
+          elsif value.is_a?(Hash) || value.is_a?(Array) && value[0].is_a?(Hash)
             value.to_json
           else
             value
@@ -48,7 +48,7 @@ module PluggableJs
         end.join(' ')
         @js_data_string = 'window.pluggable_js = {}; ' + data_string
       end
-      
+
     end
 
   end

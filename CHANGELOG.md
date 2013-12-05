@@ -33,3 +33,7 @@
 ## v1.0.0
 
 * passing data to javascript functionality
+
+## v1.0.1
+
+* array of hashes support

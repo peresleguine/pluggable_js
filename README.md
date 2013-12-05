@@ -1,12 +1,12 @@
 
 # PluggableJs
 
-This gem provides simple functionality of loading page specific javascript and passing data (for Rails >= 3.1 with asset pipeline enabled). Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is loaded.
+This gem provides simple functionality of loading page specific javascript and passing data from a controller (for Rails >= 3.1 with asset pipeline enabled). Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is loaded.
 
 ## Installation
 
 * Add `gem 'pluggable_js'` to Gemfile and run `bundle` command to install it
-* Add `<%= javascript_pluggable_tag %>` to application layout file after `<%= javascript_include_tag 'application' %>` line
+* Add `<%= javascript_pluggable_tag %>` to application layout file after `<%= javascript_include_tag 'application' %>` line (if you use turbolinks, move helper inside the `body` tag)
 
 Next steps are necessary only if you want to use generator for large pieces of js code (see usage):
 
@@ -45,7 +45,8 @@ class PostsController < ApplicationController
       integer: 1,
       boolean: true,
       array: [1, 2, 3],
-      hash: { a: 1, b: 2, c: 3 }
+      hash: { a: 1, b: 2, c: 3 },
+      array_of_hashes: [{a: 1}, {b: 2}, {c: 3}]
     })
   end
 end
@@ -61,6 +62,7 @@ posts.index = () ->
     console.log pluggable_js.integer
     console.log pluggable_js.array
     console.log pluggable_js.hash
+    console.log pluggable_js.array_of_hashes
 ```
 
 ## Config

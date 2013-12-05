@@ -35,7 +35,13 @@ Then(/^I should see content with 'array'$/) do
 end
 
 Then(/^I should see content with 'hash'$/) do
-  page.should have_content 'Zealots: 12.'
-  page.should have_content 'Dragoons: 6.'
-  page.should have_content 'Archons: 1.'
+  page.should have_content 'Dragoon: Make use of me.'
+  page.should have_content 'High Templar: It shall be done.'
+  page.should have_content 'Archon: We burn...'
+end
+
+Then(/^I should see content with 'array_of_hashes'$/) do
+  page.should have_content 'Scout: Awaiting command.'
+  page.should have_content 'Arbiter: We feel your presence.'
+  page.should have_content 'Carrier: Affirmative.'
 end
