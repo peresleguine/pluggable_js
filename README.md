@@ -77,7 +77,7 @@ end
 
 `{ 'create' => 'new', 'update' => 'edit' }` is a default REST configuration.
 
-If you passing data, move `pluggable_js` helper into a separate private method and use `before_action :your_private_method, only: [:index, :search]` (`before_filter` in Rails < 4).
+If you are passing data, move `pluggable_js` helper into a separate private method and use `before_action :your_private_method, only: [:index, :search]` (`before_filter` in Rails < 4).
 
 ## Upgrade
 
