@@ -64,7 +64,7 @@ posts.index = () ->
     console.log pluggable_js.array_of_hashes
 ```
 
-\* `pjs` is an alias of `pluggable_js`.
+Note: `pjs` is an alias of `pluggable_js`.
 
 ## Config
 
