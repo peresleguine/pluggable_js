@@ -39,15 +39,16 @@ module PluggableJs
         data_string = hash.map do |key, value|
           value = if value.is_a?(String)
             "'#{value}'"
-          elsif value.is_a?(Hash) || value.is_a?(Array) && value[0].is_a?(Hash)
+          elsif value.is_a?(Hash) || value.is_a?(Array)
             value.to_json
           else
             value
           end
-          "pluggable_js.#{key} = #{value};"
+          "pluggable_js.#{key} = pjs.#{key} = #{value};"
         end.join(' ')
-        @js_data_string = 'window.pluggable_js = {}; ' + data_string
+        @js_data_string = 'window.pluggable_js = window.pjs = {}; ' + data_string
       end
+      alias_method :pjs, :pluggable_js
 
     end
 

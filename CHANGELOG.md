@@ -37,3 +37,7 @@
 ## v1.0.1
 
 * array of hashes support
+
+## v1.0.2
+
+* array conversion for js and pjs as alias method.

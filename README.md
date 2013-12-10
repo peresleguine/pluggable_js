@@ -1,4 +1,3 @@
-
 # PluggableJs
 
 This gem provides simple functionality of loading page specific javascript and passing data from a controller (for Rails >= 3.1 with asset pipeline enabled). Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is loaded.
@@ -64,6 +63,8 @@ posts.index = () ->
     console.log pluggable_js.hash
     console.log pluggable_js.array_of_hashes
 ```
+
+\* `pjs` is an alias of `pluggable_js`.
 
 ## Config
 
