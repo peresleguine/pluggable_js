@@ -41,3 +41,7 @@
 ## v1.0.2
 
 * array conversion for js and pjs as alias method.
+
+## v1.0.3
+
+* removed unnecessary conditions from pluggable_js controller helper

@@ -34,17 +34,10 @@ module PluggableJs
     end
 
     module ControllerHelpers
-      # convert hash, passed from controller's action, to js data string
+      # convert hash passed from a controller's action to js data string
       def pluggable_js(hash)
         data_string = hash.map do |key, value|
-          value = if value.is_a?(String)
-            "'#{value}'"
-          elsif value.is_a?(Hash) || value.is_a?(Array)
-            value.to_json
-          else
-            value
-          end
-          "pluggable_js.#{key} = pjs.#{key} = #{value};"
+          "pluggable_js.#{key} = pjs.#{key} = #{value.to_json};"
         end.join(' ')
         @js_data_string = 'window.pluggable_js = window.pjs = {}; ' + data_string
       end

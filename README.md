@@ -79,7 +79,3 @@ end
 `{ 'create' => 'new', 'update' => 'edit' }` is a default REST configuration.
 
 If you are passing data, move `pluggable_js` helper into a separate private method and use `before_action :your_private_method, only: [:index, :search]` (`before_filter` in Rails < 4).
-
-## Upgrade
-
-If you are upgrading from version `<= 0.0.6` to `1.0.0`, all you have to do is rename old construction `window.Post` to new `window.posts` (see usage).
