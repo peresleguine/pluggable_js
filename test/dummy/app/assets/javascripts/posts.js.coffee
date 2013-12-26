@@ -1,11 +1,10 @@
-window.posts = {}
-posts.index = () ->
-  $('.protoss-quotes').append("<p>#{pjs.zealot_quote}</p>")
-  $('.protoss-quotes').append('<p>You have not enough minerals.</p>' if pluggable_js.minerals_size < 1000)
-  $('.protoss-quotes').append('<p>Base is under attack.</p>') if pluggable_js.base_is_under_attack
-  $('.protoss-quotes').append("<p>#{pluggable_js.alert.join(' ')}</p>")
-  for key, value of pluggable_js.ground_units_quotes
+window['posts#index'] = (data) ->
+  $('.protoss-quotes').append("<p>#{data.zealot_quote}</p>")
+  $('.protoss-quotes').append('<p>You have not enough minerals.</p>' if data.minerals_size < 1000)
+  $('.protoss-quotes').append('<p>Base is under attack.</p>') if data.base_is_under_attack
+  $('.protoss-quotes').append("<p>#{data.alert.join(' ')}</p>")
+  for key, value of data.ground_units_quotes
     $('.protoss-quotes').append("<p>#{key}: #{value}</p>")
-  for unit in pluggable_js.air_units_quotes
+  for unit in data.air_units_quotes
     for key, value of unit
       $('.protoss-quotes').append("<p>#{key}: #{value}</p>")

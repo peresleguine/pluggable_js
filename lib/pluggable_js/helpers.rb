@@ -1,7 +1,7 @@
 module PluggableJs
   module Helpers
 
-    module ViewHelpers
+    module View
       # include file if it exists or pass data and call a function
       def javascript_pluggable_tag
         controller = params[:controller]
@@ -11,10 +11,10 @@ module PluggableJs
           javascript_include_tag "pluggable/#{controller}/#{action}"
         else
           javascript_tag "
-            #{@js_data_string}
+            pjs_data = {}; #{@data_string}
             jQuery(function() {
-              if (typeof(#{controller}) == 'object' && typeof(#{controller}['#{action}']) == 'function') { 
-                return #{controller}['#{action}']();
+              if (typeof(window['#{controller}##{action}']) == 'function') {
+                return window['#{controller}##{action}'](pjs_data);
               }
             });"
         end
@@ -33,13 +33,10 @@ module PluggableJs
 
     end
 
-    module ControllerHelpers
-      # convert hash passed from a controller's action to js data string
+    module Controller
+      # convert hash passed from a controller's action to data string
       def pluggable_js(hash)
-        data_string = hash.map do |key, value|
-          "pluggable_js.#{key} = pjs.#{key} = #{value.to_json};"
-        end.join(' ')
-        @js_data_string = 'window.pluggable_js = window.pjs = {}; ' + data_string
+        @data_string = hash.map { |key, value| "pjs_data.#{key} = #{value.to_json}" }.join('; ')
       end
       alias_method :pjs, :pluggable_js
 
