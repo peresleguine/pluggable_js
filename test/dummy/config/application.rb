@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+require 'action_controller/railtie'
+require 'sprockets/railtie'
 
 Bundler.require(*Rails.groups)
 require 'pluggable_js'
