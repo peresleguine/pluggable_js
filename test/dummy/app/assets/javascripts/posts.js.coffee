@@ -8,3 +8,6 @@ window['posts#index'] = (data) ->
   for unit in data.air_units_quotes
     for key, value of unit
       $('.protoss-quotes').append("<p>#{key}: #{value}</p>")
+
+window['posts#new'] = (data) ->
+  $('.terran-quotes').append("<p>#{data.marine_quote}</p>")

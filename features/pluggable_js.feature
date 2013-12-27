@@ -21,4 +21,5 @@ Feature: PluggableJs
   Scenario: New Post
     When I go to new post
     Then I should see 'You wanna piece of me, boy?'
+    And I should see 'Fire it up.'
     And I should not see 'My life for aiur.'

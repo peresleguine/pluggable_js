@@ -45,3 +45,7 @@
 ## v1.0.3
 
 * removed unnecessary conditions from pluggable_js controller helper
+
+## v2.0.0
+
+* improved namespace and data passing

@@ -2,4 +2,4 @@
 # don't want to define as a function in controller related js file.
 
 jQuery ->
-  $('.terran-quotes').text('You wanna piece of me, boy?')
+  $('.terran-quotes').append('<p>Fire it up.</p>')

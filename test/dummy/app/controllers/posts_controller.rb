@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   end
 
   def new
+    pjs({marine_quote: 'You wanna piece of me, boy?'})
   end
 
   private
