@@ -88,3 +88,19 @@ If you are passing data, move `pluggable_js` helper into a separate private meth
 * [from v0.0.4 to v0.0.5](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v0.0.4-to-v0.0.5)
 * [from <= v0.0.6 to v1.0.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v0.0.6-or-less-to-v1.0.0)
 * [from v1.0 to v2.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v1.0-to-v2.0)
+
+## Sublime Text Snippet
+
+Go to `Sublime Text > Preferences > Browse Packages...` and save under `User` directory `pjs.sublime-snippet` with following content:
+
+```xml
+<snippet>
+  <content><![CDATA[
+window['${0}#'] = (data) ->
+]]></content>
+  <tabTrigger>pjs</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>
+```
+
+Thereafter `pjs` snippet will be available in coffeescript files.
