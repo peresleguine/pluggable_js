@@ -34,14 +34,14 @@ You may pass data to javascript using `pluggable_js` helper in a controller (`pj
 ```ruby
 class PostsController < ApplicationController
   def index
-    pluggable_js({ 
+    pluggable_js(
       string: 'string',
       integer: 1,
       boolean: true,
       array: [1, 2, 3],
       hash: { a: 1, b: 2, c: 3 },
       array_of_hashes: [{a: 1}, {b: 2}, {c: 3}]
-    })
+    )
   end
 end
 ```
