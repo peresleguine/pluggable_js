@@ -4,21 +4,10 @@ This gem provides simple functionality of loading page specific javascript and a
 
 ## Installation
 
-### Basic
-
-* Add `gem 'pluggable_js', '~> 2.0.0'` to Gemfile and run `bundle` command to install it
-* Add `<%= javascript_pluggable_tag %>` to application layout file after `<%= javascript_include_tag 'application' %>` line (if you use turbolinks, move helper inside the `body` tag)
-
-### Additional
-
-This steps are necessary only if you want to use generator for large pieces of js code (see [additional usage](https://github.com/peresleguine/pluggable_js#additional-1)):
-
-* Add `pluggable/*` to assets precompile configuration in production.rb (and staging.rb if you have one), e.g.: `config.assets.precompile += %w(pluggable/*)`
-* Be sure that `pluggable` folder is out of `require_tree` statement in application.js
+1. Add `gem 'pluggable_js', '~> 2.0.0'` to Gemfile and run `bundle` command to install it
+2. Add `<%= javascript_pluggable_tag %>` to application layout file after `<%= javascript_include_tag 'application' %>` line (if you use turbolinks, move helper inside the `body` tag)
 
 ## Usage
-
-### Basic
 
 Simply define functions in your controller related file (e.g. posts.js.coffee) like so:
 
@@ -58,17 +47,6 @@ window['posts#index'] = (data) ->
     console.log data.array_of_hashes
 ```
 
-### Additional
-
-In such cases when you have large piece of code (maybe external lib) that you don't want to define as a function but include on a certain page, choose controller and actions you want to use and run generator, e.g.:
-    
-    rails generate pluggable_js posts index new
-
-It will create two files where you may add your code (don't forget to follow [additional installation steps](https://github.com/peresleguine/pluggable_js#additional)):
-    
-    app/assets/javascripts/pluggable/posts/index.js.coffee
-    app/assets/javascripts/pluggable/posts/new.js.coffee
-
 ## Config
 
 Let's say you've created action `search` that renders `index` template. Most likely we still need to trigger `window['posts#index'](data)` function. In such situation you may create `config/initializers/pluggable_js.rb` and use pair actions config:
@@ -91,7 +69,7 @@ If you are passing data, move `pluggable_js` helper into a separate private meth
 
 ## Sublime Text Snippet
 
-Go to `Sublime Text > Preferences > Browse Packages...` and save under `User` directory `pjs.sublime-snippet` with following content:
+Go to `Sublime Text > Preferences > Browse Packages...` and save under `User` directory `pjs.sublime-snippet` with the following content:
 
 ```xml
 <snippet>

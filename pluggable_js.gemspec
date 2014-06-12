@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = PluggableJs::VERSION
   spec.authors       = ['Andrey Peresleguine']
   spec.email         = ['peresleguine@gmail.com']
-  spec.description   = %q{A solution for Rails of how to load page specific javascript and pass data.}
-  spec.summary       = %q{Pluggable javascript and data passing for Rails.}
+  spec.description   = %q{Page-specific javascript for Rails applications with the ability of passing data.}
+  spec.summary       = %q{Page-specific javascript for Rails.}
   spec.homepage      = 'https://github.com/peresleguine/pluggable_js'
   spec.license       = 'MIT'
 

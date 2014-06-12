@@ -1,5 +1,5 @@
 Description:
-    Creates js files containing function callers based on controller and action parameters.
+    Creates coffeescript files based on controller and action parameters.
 
 Example:
     $ rails generate pluggable_js Posts index new
