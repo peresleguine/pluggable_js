@@ -1,4 +1,4 @@
-window['posts#index'] = (data) ->
+@['posts#index'] = (data) ->
   $('.protoss-quotes').append("<p>#{data.zealot_quote}</p>")
   $('.protoss-quotes').append('<p>You have not enough minerals.</p>' if data.minerals_size < 1000)
   $('.protoss-quotes').append('<p>Base is under attack.</p>') if data.base_is_under_attack
@@ -9,5 +9,5 @@ window['posts#index'] = (data) ->
     for key, value of unit
       $('.protoss-quotes').append("<p>#{key}: #{value}</p>")
 
-window['posts#new'] = (data) ->
+@['posts#new'] = (data) ->
   $('.terran-quotes').append("<p>#{data.marine_quote}</p>")

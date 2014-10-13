@@ -49,3 +49,7 @@
 ## v2.0.0
 
 * improved namespace and data passing
+
+## v2.0.1
+
+* refactored helpers, improved readme

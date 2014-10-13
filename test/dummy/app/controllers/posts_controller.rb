@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :init_pluggable_js, only: [:index, :search]
+  before_action :set_pluggable_js, only: [:index, :search]
 
   def index
   end
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 
   private
 
-  def init_pluggable_js
+  def set_pluggable_js
     pluggable_js(
       zealot_quote: 'My life for aiur.',
       minerals_size: 999,
