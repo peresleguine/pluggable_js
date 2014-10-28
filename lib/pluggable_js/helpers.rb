@@ -10,9 +10,13 @@ module PluggableJs
           content << (javascript_tag "
             (function() {
               var function_name = '#{controller}##{action}';
+              var __#{controller}_#{action}_handler_active = true;
               if (typeof(this[function_name]) == 'function') {
                 $(function() {
-                  return window[function_name](#{@pluggable_js_data});
+                  if ( __#{controller}_#{action}_handler_active ) {
+                    __#{controller}_#{action}_handler_active = false;
+                    return window[function_name](#{@pluggable_js_data});
+                  }
                 });
               }
             }).call(this);"
