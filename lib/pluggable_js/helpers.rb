@@ -19,7 +19,7 @@ module PluggableJs
                   }
                 });
               }
-            }).call(this);"
+            }).call(window);"
           )
 
           if File.exist?(Rails.root + "app/assets/javascripts/pluggable/#{controller}/#{action}.js.coffee")

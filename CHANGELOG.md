@@ -53,3 +53,7 @@
 ## v2.0.1
 
 * refactored helpers, improved readme
+
+## v2.0.2
+
+* turbolinks related bugfix
