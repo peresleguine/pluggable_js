@@ -1,4 +1,6 @@
-# PluggableJs
+# PluggableJs 
+
+[![Gem Version](https://badge.fury.io/rb/pluggable_js.svg)](http://badge.fury.io/rb/pluggable_js)
 
 This gem provides simple functionality of loading page specific javascript and allows to pass data from a controller (for Rails 3 and Rails 4 with asset pipeline enabled). Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is ready.
 
