@@ -6,7 +6,7 @@ This gem provides simple functionality of loading page specific javascript and a
 
 ## Installation
 
-1. Add `gem 'pluggable_js', '~> 2.0.3'` to Gemfile and run `bundle` command to install it
+1. Add `gem 'pluggable_js', '~> 2.0.4'` to Gemfile and run `bundle` command to install it
 2. Add `<%= javascript_pluggable_tag %>` helper to application layout file after `<%= javascript_include_tag 'application' %>` line (if you use turbolinks paste it above the closing `</body>` tag)
 
 ## Usage

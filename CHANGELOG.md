@@ -57,3 +57,7 @@
 ## v2.0.3
 
 * turbolinks related bugfix
+
+## v2.0.4
+
+* nested resources related bugfix

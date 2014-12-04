@@ -1,13 +1,13 @@
 When(/^I go to posts 'index'$/) do
-  visit posts_path
+  visit pluggable_js_posts_path
 end
 
 When(/^I go to posts 'search'$/) do
-  visit search_posts_path
+  visit search_pluggable_js_posts_path
 end
 
 When(/^I go to new post$/) do
-  visit new_post_path
+  visit new_pluggable_js_post_path
 end
 
 Then(/^I should see '(.*?)'$/) do |text|

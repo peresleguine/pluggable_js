@@ -5,18 +5,17 @@ module PluggableJs
       def javascript_pluggable_tag
         controller = params[:controller]
         action = define_pair_action
+        sc_var_name = "__should_call_#{controller.gsub(/\//, '__')}_#{action}"
 
         ''.tap do |content|
           content << (javascript_tag "
             (function() {
               var function_name = '#{controller}##{action}';
-              var __#{controller}_#{action}_handler_active = true;
-              if (typeof(this[function_name]) == 'function') {
+              var #{sc_var_name} = true;
+              if (typeof(this[function_name]) == 'function' && #{sc_var_name}) {
                 $(function() {
-                  if ( __#{controller}_#{action}_handler_active ) {
-                    __#{controller}_#{action}_handler_active = false;
-                    return window[function_name](#{@pluggable_js_data});
-                  }
+                  #{sc_var_name} = false;
+                  return window[function_name](#{@pluggable_js_data});
                 });
               }
             }).call(window);"
