@@ -63,6 +63,13 @@ end
 
 If you are passing data, move `pluggable_js` helper into a separate private method and use `before_action :set_pluggable_js, only: [:index, :search]` (`before_filter` in Rails < 4).
 
+If you need to call your controller specific methods with jQuery.ready initialize:
+```ruby
+PluggableJs.config do |config|
+  config.use_jquery_ready = true
+end
+```
+
 ## Upgrade
 
 * [from <= v0.0.6 to v1.0.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v0.0.6-or-less-to-v1.0.0)
