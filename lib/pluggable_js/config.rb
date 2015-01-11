@@ -1,6 +1,8 @@
 module PluggableJs
   module Config
     DEFAULT_PAIR_ACTIONS = { 'create' => 'new', 'update' => 'edit' }
+    
+    mattr_accessor :use_jquery_ready
 
     class << self
       def pair_actions=(hash = {})
