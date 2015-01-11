@@ -7,34 +7,21 @@ module PluggableJs
         action = define_pair_action
         sc_var_name = "__should_call_#{controller.gsub(/\//, '__')}_#{action}"
 
-        js_call = if Config.use_jquery_ready
-          "
-            jQuery(function() {
-              (function() {
-                var function_name = '#{controller}##{action}';
-                var #{sc_var_name} = true;
-                if (typeof(this[function_name]) == 'function' && #{sc_var_name}) {
-                  $(function() {
-                    #{sc_var_name} = false;
-                    return window[function_name](#{@pluggable_js_data});
-                  });
-                }
-              }).call(window);
-            });
-          "
-        else
-          "
-            (function() {
-              var function_name = '#{controller}##{action}';
-              var #{sc_var_name} = true;
-              if (typeof(this[function_name]) == 'function' && #{sc_var_name}) {
-                $(function() {
-                  #{sc_var_name} = false;
-                  return window[function_name](#{@pluggable_js_data});
-                });
-              }
-            }).call(window);
-          "
+        js_call = "
+          (function() {
+            var function_name = '#{controller}##{action}';
+            var #{sc_var_name} = true;
+            if (typeof(this[function_name]) == 'function' && #{sc_var_name}) {
+              $(function() {
+                #{sc_var_name} = false;
+                return window[function_name](#{@pluggable_js_data});
+              });
+            }
+          }).call(window);
+        "
+        
+        if Config.use_jquery_ready
+          js_call = "jQuery(function() { #{js_call} });"
         end
         
         ''.tap do |content|
