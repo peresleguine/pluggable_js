@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'cucumber-rails'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'capybara-webkit'
+  spec.add_development_dependency 'turbolinks'
 end
