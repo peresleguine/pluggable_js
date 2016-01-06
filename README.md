@@ -1,4 +1,4 @@
-# PluggableJs 
+# PluggableJs
 
 [![Gem Version](https://badge.fury.io/rb/pluggable_js.svg)](http://badge.fury.io/rb/pluggable_js)
 
@@ -6,8 +6,8 @@ This gem provides simple functionality of loading page specific javascript and a
 
 ## Installation
 
-1. Add `gem 'pluggable_js', '~> 2.0.4'` to Gemfile and run `bundle` command to install it
-2. Add `<%= javascript_pluggable_tag %>` helper to application layout file after `<%= javascript_include_tag 'application' %>` line (if you use turbolinks paste it above the closing `</body>` tag)
+1. Add `gem 'pluggable_js', '~> 2.1.0'` to Gemfile and run `bundle` command to install it
+2. Add `<%= javascript_pluggable_tag %>` helper to application layout file above the closing `</body>` tag
 
 ## Usage
 
@@ -67,6 +67,7 @@ If you are passing data, move `pluggable_js` helper into a separate private meth
 
 * [from <= v0.0.6 to v1.0.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v0.0.6-or-less-to-v1.0.0)
 * [from v1.0 to v2.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v1.0-to-v2.0)
+* [from v2.0 to v2.1](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v2.0-to-v2.1)
 
 ## Sublime Text Snippet
 
@@ -75,7 +76,8 @@ Go to `Sublime Text > Preferences > Browse Packages...` and save under `User` di
 ```xml
 <snippet>
   <content><![CDATA[
-@['${0}#'] = (data) ->
+@['$1#$2'] = (data) ->
+  $0
 ]]></content>
   <tabTrigger>pjs</tabTrigger>
   <scope>source.coffee</scope>

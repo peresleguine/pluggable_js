@@ -61,3 +61,9 @@
 ## v2.0.4
 
 * nested resources related bugfix
+
+## v2.1.0
+
+* removed jquery and coffee from core dependency
+* removed unused generator
+* simplified main helper
