@@ -3,8 +3,8 @@ module PluggableJs
     DEFAULT_PAIR_ACTIONS = { 'create' => 'new', 'update' => 'edit' }
 
     class << self
-      def pair_actions=(hash = {})
-        @pair_actions = DEFAULT_PAIR_ACTIONS.merge hash
+      def pair_actions=(actions = {})
+        @pair_actions = DEFAULT_PAIR_ACTIONS.merge(actions)
       end
 
       def pair_actions

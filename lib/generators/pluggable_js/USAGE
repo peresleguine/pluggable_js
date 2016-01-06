@@ -1,8 +1,0 @@
-Description:
-    Creates coffeescript files based on controller and action parameters.
-
-Example:
-    $ rails generate pluggable_js Posts index new
-
-        create  app/assets/javascripts/pluggable/posts/index.js.coffee
-        create  app/assets/javascripts/pluggable/posts/show.js.coffee

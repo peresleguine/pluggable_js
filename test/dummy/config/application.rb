@@ -6,6 +6,7 @@ require 'sprockets/railtie'
 Bundler.require(*Rails.groups)
 require 'pluggable_js'
 require 'jquery-rails'
+require 'turbolinks'
 
 module Dummy
   class Application < Rails::Application
