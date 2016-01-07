@@ -2,12 +2,14 @@
 
 [![Gem Version](https://badge.fury.io/rb/pluggable_js.svg)](http://badge.fury.io/rb/pluggable_js)
 
-This gem provides simple functionality of loading page specific javascript and allows to pass data from a controller (for Rails 3 and Rails 4 with asset pipeline enabled). Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is ready.
+This gem provides simple functionality of loading page specific javascript and allows to pass data from a controller. It requires only Rails >= 3.1 with asset pipeline enabled. Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is ready.
 
 ## Installation
 
 1. Add `gem 'pluggable_js', '~> 2.1.0'` to Gemfile and run `bundle` command to install it
 2. Add `<%= javascript_pluggable_tag %>` helper to application layout file above the closing `</body>` tag
+
+The place for the helper is important. Primarily it serves the DOM ready purpose and completely necessary if you decided to use turbolinks.
 
 ## Usage
 
@@ -48,6 +50,8 @@ Now you can access data in posts.js.coffee:
     console.log data.hash
     console.log data.array_of_hashes
 ```
+
+CoffeeScript used here just for the sake of simplicity. You may implement the same with plain JavaScript.
 
 ## Config
 
