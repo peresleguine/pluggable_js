@@ -6,14 +6,14 @@ This gem provides simple functionality of loading page specific javascript and a
 
 ## Installation
 
-1. Add `gem 'pluggable_js', '~> 2.1.0'` to Gemfile and run `bundle` command to install it
+1. Add `gem 'pluggable_js', '~> 2.2.0'` to Gemfile and run `bundle` command to install it
 2. Add `<%= javascript_pluggable_tag %>` helper to application layout file above the closing `</body>` tag
 
 The place for the helper is important. Primarily it serves the DOM ready purpose and completely necessary if you decided to use turbolinks.
 
 ## Usage
 
-Simply define functions in your controller related file (e.g. posts.js.coffee) like so:
+Simply define functions in your controller related file (e.g. posts.coffee) like so:
 
 ```coffeescript
 @['posts#index'] = (data) ->
@@ -22,7 +22,7 @@ Simply define functions in your controller related file (e.g. posts.js.coffee) l
   # and here
 ```
 
-You may pass data to javascript using `pluggable_js` helper in a controller (`pjs` is an alias method). See example below:
+You may pass data to javascript function using `pluggable_js` helper in rails controller (`pjs` is an alias method). See example below:
 
 ```ruby
 class PostsController < ApplicationController
@@ -39,16 +39,16 @@ class PostsController < ApplicationController
 end
 ```
 
-Now you can access data in posts.js.coffee:
+If you feel like this logic doesn't belong to a controller, safely move it to a view. Then you can access data in posts.coffee:
 
 ```coffeescript
 @['posts#index'] = (data) ->
-  if data.boolean
-    console.log data.string
-    console.log data.integer
-    console.log data.array
-    console.log data.hash
-    console.log data.array_of_hashes
+  console.log data.string
+  console.log data.integer
+  console.log data.boolean
+  console.log data.array
+  console.log data.hash
+  console.log data.array_of_hashes
 ```
 
 CoffeeScript used here just for the sake of simplicity. You may implement the same with plain JavaScript.
@@ -64,8 +64,6 @@ end
 ```
 
 `{ 'create' => 'new', 'update' => 'edit' }` is a default REST configuration.
-
-If you are passing data, move `pluggable_js` helper into a separate private method and use `before_action :set_pluggable_js, only: [:index, :search]` (`before_filter` in Rails < 4).
 
 ## Upgrade
 

@@ -67,3 +67,7 @@
 * removed jquery and coffee from core dependency
 * removed unused generator
 * simplified main helper
+
+## v2.2.0
+
+* shared data helper between view and controller
