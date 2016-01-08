@@ -1,7 +1,16 @@
 module PluggableJs
   module Helpers
 
+    module Shared
+      def pluggable_js(data)
+        @pluggable_js_data = data.to_json
+      end
+      alias_method :pjs, :pluggable_js
+    end
+
     module View
+      include PluggableJs::Helpers::Shared
+
       def javascript_pluggable_tag
         controller = params[:controller]
         action = define_pair_action
@@ -28,10 +37,7 @@ module PluggableJs
     end
 
     module Controller
-      def pluggable_js(data)
-        @pluggable_js_data = data.to_json
-      end
-      alias_method :pjs, :pluggable_js
+      include PluggableJs::Helpers::Shared
     end
 
   end
