@@ -1,6 +1,6 @@
 # PluggableJs
 
-[![Gem Version](https://badge.fury.io/rb/pluggable_js.svg)](http://badge.fury.io/rb/pluggable_js)
+[![Build Status](https://travis-ci.org/peresleguine/pluggable_js.svg?branch=master)](https://travis-ci.org/peresleguine/pluggable_js) [![Gem Version](https://badge.fury.io/rb/pluggable_js.svg)](http://badge.fury.io/rb/pluggable_js)
 
 This gem provides simple functionality of loading page specific javascript and allows to pass data from a controller. It requires only Rails >= 3.1 with asset pipeline enabled. Keep desired js code in controller related files as action based functions. They will be triggered only when matching controller and action parameters and when DOM is ready.
 
@@ -70,6 +70,14 @@ end
 * [from <= v0.0.6 to v1.0.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v0.0.6-or-less-to-v1.0.0)
 * [from v1.0 to v2.0](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v1.0-to-v2.0)
 * [from v2.0 to v2.1](https://github.com/peresleguine/pluggable_js/wiki/Upgrade-from-v2.0-to-v2.1)
+
+## Development notes
+
+To run the test suite:
+
+```
+bundle exec cucumber
+```
 
 ## Sublime Text Snippet
 
