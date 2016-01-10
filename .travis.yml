@@ -5,8 +5,8 @@ cache: bundler
 sudo: false
 
 rvm:
-  - 2.3
+  - 2.3.0
   - 2.2
   - 2.1
 
-script: bundle exec cucumber
+script: xvfb-run bundle exec cucumber
