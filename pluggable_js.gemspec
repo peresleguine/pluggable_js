@@ -21,10 +21,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rails', '>= 3.1'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
-  spec.add_development_dependency 'cucumber-rails'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'capybara-webkit'
-  spec.add_development_dependency 'turbolinks'
-  spec.add_development_dependency 'jquery-rails'
-  spec.add_development_dependency 'coffee-rails'
+  spec.add_development_dependency 'cucumber-rails', '~> 1.4.2'
+  spec.add_development_dependency 'rspec-expectations', '~> 3.4.0'
+  spec.add_development_dependency 'capybara-webkit', '~> 1.5.0'
+  spec.add_development_dependency 'turbolinks', '~> 2.5.0'
+  spec.add_development_dependency 'jquery-rails', '~> 4.0.0'
+  spec.add_development_dependency 'coffee-rails', '~> 4.1.0'
 end

@@ -11,37 +11,37 @@ When(/^I go to new post$/) do
 end
 
 Then(/^I should see '(.*?)'$/) do |text|
-  page.should have_content text
+  expect(page).to have_content(text)
 end
 
 And(/^I should not see '(.*?)'$/) do |text|
-  page.should_not have_content text
+  expect(page).not_to have_content(text)
 end
 
 Then(/^I should see content with 'string'$/) do
-  page.should have_content 'My life for aiur.'
+  expect(page).to have_content('My life for aiur.')
 end
 
 Then(/^I should see content with 'integer'$/) do
-  page.should have_content 'You have not enough minerals.'
+  expect(page).to have_content('You have not enough minerals.')
 end
 
 Then(/^I should see content with 'boolean'$/) do
-  page.should have_content 'Base is under attack.'
+  expect(page).to have_content('Base is under attack.')
 end
 
 Then(/^I should see content with 'array'$/) do
-  page.should have_content 'Nuclear launch detected.'
+  expect(page).to have_content('Nuclear launch detected.')
 end
 
 Then(/^I should see content with 'hash'$/) do
-  page.should have_content 'Dragoon: Make use of me.'
-  page.should have_content 'High Templar: It shall be done.'
-  page.should have_content 'Archon: We burn...'
+  expect(page).to have_content('Dragoon: Make use of me.')
+  expect(page).to have_content('High Templar: It shall be done.')
+  expect(page).to have_content('Archon: We burn...')
 end
 
 Then(/^I should see content with 'array_of_hashes'$/) do
-  page.should have_content 'Scout: Awaiting command.'
-  page.should have_content 'Arbiter: We feel your presence.'
-  page.should have_content 'Carrier: Affirmative.'
+  expect(page).to have_content('Scout: Awaiting command.')
+  expect(page).to have_content('Arbiter: We feel your presence.')
+  expect(page).to have_content('Carrier: Affirmative.')
 end
